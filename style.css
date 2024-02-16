@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('assets/Antique-Olive-Std-Nord_3868.ttf') format('truetype');
+}
+
+:root {
+    --background-color: black;
+    --text-color: white;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: CustomFont, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 2rem;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+}
+
+.home img {
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+
+.home h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+}
+
+.home a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 0.8rem;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.link img {
+    width: 10rem;
+}
+
+.link h2 {
+    font-size: 0.8rem;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.link--artworks:hover img {
+    content: url('assets/artworks.webp');
+}
+
+.link--book:hover img {
+    content: url('assets/book.webp');
+}
+
+.link--noises:hover img {
+    content: url('assets/noises.webp');
+}
+
+.link--band:hover img {
+    content: url('assets/band.webp');
+}
+
+@media screen and (min-width: 768px) {
+    .home {
+        margin-bottom: 7rem;
+    }
+
+    .home img {
+        width: 10rem;
+    }
+
+    .home h1,
+    .home a {
+        font-size: 1.2rem;
+    }
+
+    .link img {
+        width: 28rem;
+    }
+
+    .link h2 {
+        font-size: 1.2rem;
+    }
+}
