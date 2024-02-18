@@ -14,47 +14,54 @@ body {
     background-color: var(--landing-page-background-color);
     color: var(--text-color);
     font-family: CustomFont, sans-serif;
-    padding-top: 2rem;
 }
 
-.landing-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    height: calc(100vh - 2rem);
+.header-not-at-top {
+    header {
+        filter: invert(1);
+    }
 }
 
-.home {
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-transform: uppercase;
-    margin-bottom: 5rem;
+    position: fixed;
+    top: 2rem;
+    width: 100%;
+    z-index: 1;
+    transition: filter 0.5s;
+
+
+    img {
+        width: 5rem;
+        margin-bottom: 1rem;
+    }
+
+    h1,
+    p {
+        font-size: 0.8rem;
+
+    }
 }
 
-.home img {
-    width: 5rem;
-    margin-bottom: 1rem;
-}
-
-.home h1, .home p {
-    font-size: 0.8rem;
-}
-
-.home a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 0.8rem;
-}
 
 .links {
-    display: grid;
+    position: fixed;
+    top: 20rem;
+    width: 100%;
+    display: flex;
     justify-content: center;
-    list-style: none;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0;
+    align-items: center;
+
+    ul {
+        display: grid;
+        justify-content: center;
+        list-style: none;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+    }
 }
 
 .link {
@@ -62,16 +69,16 @@ body {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-}
 
-.link img {
-    width: 10rem;
-}
+    img {
+        width: 10rem;
+    }
 
-.link h2 {
-    font-size: 0.8rem;
-    color: var(--text-color);
-    text-transform: uppercase;
+    h2 {
+        font-size: 0.8rem;
+        color: var(--text-color);
+        text-transform: uppercase;
+    }
 }
 
 .link--artworks:hover img {
@@ -92,43 +99,47 @@ body {
 
 .artworks {
     display: grid;
-    margin-top: calc(100vh - 2rem);
+    margin-top: 100vh;
     position: relative;
     gap: 1rem;
     grid-template-columns: 1fr;
     justify-items: center;
     background-color: var(--artworks-background-color);
     padding: 1rem;
-}
 
-.artworks img {
-    width: 100%;
+    img {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) {
-    .home {
-        margin-bottom: 7rem;
-    }
+    header {
+        img {
+            width: 9rem;
+        }
 
-    .home img {
-        width: 9rem;
-    }
-
-    .home h1,
-    .home p {
-        font-size: 1.1rem;
+        h1,
+        p {
+            font-size: 1.1rem;
+        }
     }
 
     .links {
-        grid-template-columns: repeat(4, 1fr);
+        top: 25rem;
+
+        ul {
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
 
-    .link img {
-        width: 27rem;
-    }
+    .link {
+        img {
+            width: 27rem;
+        }
 
-    .link h2 {
-        font-size: 1.1rem;
+        h2 {
+            font-size: 1.1rem;
+        }
     }
 
     .artworks {

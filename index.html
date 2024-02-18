@@ -18,14 +18,14 @@
 </head>
 
 <body>
-    <section class="landing-page">
-        <div class="home">
-            <a href="#"><img src="assets/home.webp" alt="home"></a>
-            <h1>Arthur Fabre</h1>
-            <p>Ø7.7Ø.19.Ø1.Ø4</a>
-            <p>arthur.e.fabre@gmail.com</a>
-        </div>
-        <ul class="links">
+    <header>
+        <a href="#"><img src="assets/home.webp" alt="home logo"></a>
+        <h1>Arthur Fabre</h1>
+        <p>Ø7.7Ø.19.Ø1.Ø4</a>
+        <p>arthur.e.fabre@gmail.com</a>
+    </header>
+    <section class="links">
+        <ul>
             <li>
                 <a href="#artworks" class="link link--artworks">
                     <img src="assets/artworks_static.webp" alt="artworks icon">
@@ -52,12 +52,32 @@
             </li>
         </ul>
     </section>
+    <div id="top-of-site-pixel-anchor"></div>
     <section id="artworks" class="artworks">
         <img src="assets/artworks/image_01.png">
         <img src="assets/artworks/image_02.png">
         <img src="assets/artworks/image_01.png">
         <img src="assets/artworks/image_02.png">
     </section>
+
 </body>
 
 </html>
+
+<script>
+    if (
+        "IntersectionObserver" in window &&
+        "IntersectionObserverEntry" in window &&
+        "intersectionRatio" in window.IntersectionObserverEntry.prototype
+    ) {
+        let observer = new IntersectionObserver(entries => {
+            console.log(entries[0].boundingClientRect.y);
+            if (entries[0].boundingClientRect.y < 0) {
+                document.body.classList.add("header-not-at-top");
+            } else {
+                document.body.classList.remove("header-not-at-top");
+            }
+        });
+        observer.observe(document.querySelector("#top-of-site-pixel-anchor"));
+    }
+</script>
