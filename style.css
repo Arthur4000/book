@@ -4,13 +4,14 @@
 }
 
 :root {
-    --background-color: black;
+    --landing-page-background-color: black;
+    --artworks-background-color: white;
     --text-color: white;
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--landing-page-background-color);
     color: var(--text-color);
     font-family: CustomFont, sans-serif;
     padding-top: 2rem;
@@ -38,7 +39,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.home h1 {
+.home h1, .home p {
     font-size: 0.8rem;
 }
 
@@ -96,7 +97,7 @@ body {
     gap: 1rem;
     grid-template-columns: 1fr;
     justify-items: center;
-    background-color: var(--background-color);
+    background-color: var(--artworks-background-color);
     padding: 1rem;
 }
 
@@ -110,12 +111,12 @@ body {
     }
 
     .home img {
-        width: 10rem;
+        width: 9rem;
     }
 
     .home h1,
-    .home a {
-        font-size: 1.2rem;
+    .home p {
+        font-size: 1.1rem;
     }
 
     .links {
@@ -123,11 +124,11 @@ body {
     }
 
     .link img {
-        width: 28rem;
+        width: 27rem;
     }
 
     .link h2 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .artworks {
