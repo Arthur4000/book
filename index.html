@@ -15,14 +15,15 @@
     <link rel="preload" href="assets/book.webp" as="image">
     <link rel="preload" href="assets/noises.webp" as="image">
     <link rel="preload" href="assets/band.webp" as="image">
+    <script type="module" src="/main.js"></script>
 </head>
 
 <body>
     <header>
         <a href="#"><img src="assets/home.webp" alt="home logo"></a>
         <h1>Arthur Fabre</h1>
-        <p>Ø7.7Ø.19.Ø1.Ø4</a>
-        <p>arthur.e.fabre@gmail.com</a>
+        <p>Ø7.7Ø.19.Ø1.Ø4</p>
+        <p>arthur.e.fabre@gmail.com</p>
     </header>
     <section class="links">
         <ul>
@@ -54,30 +55,10 @@
     </section>
     <div id="top-of-site-pixel-anchor"></div>
     <section id="artworks" class="artworks">
-        <img src="assets/artworks/image_01.png">
-        <img src="assets/artworks/image_02.png">
-        <img src="assets/artworks/image_01.png">
-        <img src="assets/artworks/image_02.png">
+        <ul id="left-column"></ul>
+        <ul id="right-column"></ul>
     </section>
 
 </body>
 
 </html>
-
-<script>
-    if (
-        "IntersectionObserver" in window &&
-        "IntersectionObserverEntry" in window &&
-        "intersectionRatio" in window.IntersectionObserverEntry.prototype
-    ) {
-        let observer = new IntersectionObserver(entries => {
-            console.log(entries[0].boundingClientRect.y);
-            if (entries[0].boundingClientRect.y < 0) {
-                document.body.classList.add("header-not-at-top");
-            } else {
-                document.body.classList.remove("header-not-at-top");
-            }
-        });
-        observer.observe(document.querySelector("#top-of-site-pixel-anchor"));
-    }
-</script>
