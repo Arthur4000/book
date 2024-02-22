@@ -16,17 +16,13 @@ body {
     font-family: CustomFont, sans-serif;
 }
 
-.header-not-at-top {
-    header {
-        img {
-            filter: invert(1);
-        }
+.header-not-at-top header img {
+    filter: invert(1);
+}
 
-        h1,
-        p {
-            color: black;
-        }
-    }
+.header-not-at-top header h1,
+.header-not-at-top header p {
+    color: black;
 }
 
 header {
@@ -38,21 +34,19 @@ header {
     top: 2rem;
     width: 100%;
     z-index: 1;
-
-
-    img {
-        width: 5rem;
-        margin-bottom: 1rem;
-        transition: filter 0.5s;
-    }
-
-    h1,
-    p {
-        font-size: 0.8rem;
-        transition: color 0.5s;
-    }
 }
 
+header img {
+    width: 5rem;
+    margin-bottom: 1rem;
+    transition: filter 0.5s;
+}
+
+header h1,
+header p {
+    font-size: 0.8rem;
+    transition: color 0.5s;
+}
 
 .links {
     position: fixed;
@@ -61,14 +55,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
-    ul {
-        display: grid;
-        justify-content: center;
-        list-style: none;
-        grid-template-columns: repeat(2, 1fr);
-        padding: 0;
-    }
+.links ul {
+    display: grid;
+    justify-content: center;
+    list-style: none;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
 }
 
 .link {
@@ -76,16 +70,16 @@ header {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
+}
 
-    img {
-        width: 10rem;
-    }
+.link img {
+    width: 10rem;
+}
 
-    h2 {
-        font-size: 0.8rem;
-        color: var(--text-color);
-        text-transform: uppercase;
-    }
+.link h2 {
+    font-size: 1rem;
+    color: var(--text-color);
+    text-transform: uppercase;
 }
 
 .link--artworks:hover img {
@@ -113,48 +107,37 @@ header {
     justify-items: center;
     background-color: var(--artworks-background-color);
     padding: 1rem;
+}
 
-    ul {
-        padding: 0;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
+.artworks ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
-        img {
-            width: 100%;
-        }
-    }
+.artworks ul img {
+    width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-    header {
-        img {
-            width: 9rem;
-        }
 
-        h1,
-        p {
-            font-size: 1.1rem;
-        }
+    header h1,
+    header p {
+        font-size: 1rem;
     }
 
     .links {
-        top: 25rem;
-
-        ul {
-            grid-template-columns: repeat(4, 1fr);
-        }
+        top: 30rem;
     }
 
-    .link {
-        img {
-            width: 27rem;
-        }
+    .links ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
 
-        h2 {
-            font-size: 1.1rem;
-        }
+    .link img {
+        width: 15rem;
     }
 
     .artworks {
