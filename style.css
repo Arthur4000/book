@@ -50,7 +50,8 @@ header p {
 
 .links {
     position: fixed;
-    top: 20rem;
+    top: 50%;
+    transform: translateY(-50%);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -126,10 +127,6 @@ header p {
     header h1,
     header p {
         font-size: 1rem;
-    }
-
-    .links {
-        top: 30rem;
     }
 
     .links ul {
