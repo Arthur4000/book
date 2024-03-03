@@ -8,6 +8,7 @@ const artworks = [
     "assets/artworks/cover_JONMON.webp",
     "assets/artworks/cover.webp",
     "assets/artworks/headerHundredEyes.webp",
+    "assets/artworks/typo1.webp"
     "assets/artworks/IMG_4966.webp",
     "assets/artworks/img1.webp",
     "assets/artworks/2021-05-26-0017.webp",
@@ -20,6 +21,33 @@ const artworks = [
     "assets/artworks/POLICEPARTOUT.webp",
     "assets/artworks/animall.webp",
     "assets/artworks/farewell.webp"
+    "assets/artworks/1_an.webp"
+    "assets/artworks/1.webp"
+    "assets/artworks/2.webp"
+    "assets/artworks/3.webp"
+    "assets/artworks/Capture d’écran 2020-10-15 à 12.40.01.webp"
+    "assets/artworks/les_empeches_les_eclairs_2.webp"
+    "assets/artworks/BIENVENUE2.webp"
+    "assets/artworks/5.webp"
+    "assets/artworks/6.webp"
+    "assets/artworks/balkan1.webp"
+    "assets/artworks/bananier.webp"
+    "assets/artworks/BjornBorg.webp"
+    "assets/artworks/Capture-d’écran-2020-10-08-à-16.15.06.webp"
+    "assets/artworks/Capture-d’écran-2022-12-07-à-15.43.34.webp"
+    "assets/artworks/Capture-d’écran-2022-12-07-à-15.43.48.webp"
+    "assets/artworks/flyer_header.webp"
+    "assets/artworks/front.webp"
+    "assets/artworks/staringatme.webp"
+    "assets/artworks/ecosse2.webp"
+    "assets/artworks/scotland.webp"
+    "assets/artworks/toka1.webp"
+    "assets/artworks/toka2.webp"
+    "assets/artworks/toka4.webp"
+    "assets/artworks/touristsgohome_2.webp"
+    "assets/artworks/wildcard.webp"
+    "assets/artworks/SansFoiNiLoi.webp"
+    "assets/artworks/Zoo.webp"
 ];
 
 
