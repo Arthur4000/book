@@ -16,24 +16,15 @@ body {
     font-family: CustomFont, sans-serif;
 }
 
-.header-not-at-top header img {
-    filter: invert(1);
-}
-
-.header-not-at-top header h1,
-.header-not-at-top header p {
-    color: black;
-}
-
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-transform: uppercase;
-    position: fixed;
+    position: sticky;
     top: 2rem;
-    width: 100%;
     z-index: 1;
+    mix-blend-mode: difference;
 }
 
 header img {

@@ -58,6 +58,7 @@ for (let i = 0; i < artworks.length; i++) {
     const li = document.createElement("li");
     const img = document.createElement("img");
     img.src = artworks[i];
+    img.loading = "lazy";
     li.appendChild(img);
 
     if (i % 2 === 0) {
