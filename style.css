@@ -41,7 +41,7 @@ header p {
 
 .links {
     position: fixed;
-    top: 50%;
+    top: max(50%, 370px);
     transform: translateY(-50%);
     width: 100%;
     display: flex;
