@@ -112,7 +112,7 @@ header p {
 
 .artworks {
     display: grid;
-    margin-top: 100dvh;
+    margin-top: 100lvh;
     position: relative;
     gap: 1rem;
     grid-template-columns: 1fr;
