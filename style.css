@@ -27,6 +27,7 @@ header {
     right: 0;
     z-index: 1;
     mix-blend-mode: difference;
+    text-align: center;
 }
 
 header img {
@@ -43,7 +44,7 @@ header p {
 
 .links {
     position: fixed;
-    top: max(50%, 370px);
+    top: max(50%, 470px);
     transform: translateY(-50%);
     width: 100%;
     display: flex;
@@ -94,7 +95,7 @@ header p {
 
 .artworks {
     display: grid;
-    margin-top: 100lvh;
+    margin-top: 100vh;
     position: relative;
     gap: 1rem;
     grid-template-columns: 1fr;
