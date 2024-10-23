@@ -92,24 +92,6 @@ header p {
     content: url('assets/whatido.webp');
 }
 
-@media screen and (hover: none) {
-    .link--artworks img {
-        content: url('assets/artworks.webp');
-    }
-
-    .link--book img {
-        content: url('assets/book.webp');
-    }
-
-    .link--noises img {
-        content: url('assets/noises.webp');
-    }
-
-    .link--whatido img {
-        content: url('assets/whatido.webp');
-    }
-}
-
 .artworks {
     display: grid;
     margin-top: 100lvh;
