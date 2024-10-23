@@ -88,8 +88,8 @@ header p {
     content: url('assets/noises.webp');
 }
 
-.link--band:hover img {
-    content: url('assets/band.webp');
+.link--whatido:hover img {
+    content: url('assets/whatido.webp');
 }
 
 @media screen and (hover: none) {
@@ -105,8 +105,8 @@ header p {
         content: url('assets/noises.webp');
     }
 
-    .link--band img {
-        content: url('assets/band.webp');
+    .link--whatido img {
+        content: url('assets/whatido.webp');
     }
 }
 
