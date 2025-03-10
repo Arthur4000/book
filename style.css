@@ -89,11 +89,11 @@ header p {
 }
 
 .link--insta:hover img {
-    content: url('assets/Insta.gif');
+    content: url('assets/Insta.webp');
 }
 
 .link--shop:hover img {
-    content: url('assets/Shop.gif');
+    content: url('assets/Shop.webp');
 }
 
 .link--whatido:hover img {
