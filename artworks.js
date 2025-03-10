@@ -1,4 +1,5 @@
 const artworks = [
+    "assets/artworks/talkinhead.webp",
     "assets/artworks/Winston.webp",
     "assets/artworks/Ipod.webp",
     "assets/artworks/Canto.webp",
